@@ -1,0 +1,265 @@
+<html>
+	<head>
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="DanFunctions.js"></script>
+		<script type="text/javascript" src="tabs.js"></script>
+	</head>
+	<body>
+
+		<div style="text-align: center;">
+			<span style="color:#FF8C00">
+				<strong>
+					<span style="font-size:24px">Student E-Workbook</span>
+				</strong>
+			</span>
+		</div>
+
+		<div style="text-align: center;">
+			Pages:
+			<a href="page 1.html" style="cursor:pointer;">1</a>
+			&nbsp;&nbsp;
+			<a href="page-2.html" style="cursor:pointer;">2</a>
+			&nbsp;
+			<a href="page-3.html" style="cursor:pointer;">3</a>
+			&nbsp;
+			<a href="page-4.html" style="cursor:pointer;">4</a>
+			&nbsp;
+			<a href="page-5.html" style="cursor:pointer;">5</a>
+			&nbsp;
+			<a href="page-6.html" style="cursor:pointer">6</a>
+			&nbsp;
+			<a href="page-7.html" style="cursor:pointer">7</a>
+			&nbsp;
+			<a href="page-8.html" style="cursor:pointer">8</a>
+			&nbsp;
+			<a href="page-9.html" style="cursor:pointer">9</a>
+			&nbsp;
+			<a href="page-10.html" style="cursor:pointer">10</a>
+		</div>
+
+		<h2 style="text-align:center">
+			<span style="font-size:18px">
+				<span style="font-family:times new roman,times,serif">
+					<strong>
+						<span style="color:rgb(255, 140, 0)">LESSON</span>
+					</strong>
+				</span>
+			</span>
+		</h2>
+
+		<div style="text-align: center;">
+			<span style="font-size:20px">
+				<span style="font-family:times new roman,times,serif">
+					<strong>
+						<span style="color:rgb(255, 140, 0)">Understanding and expressing emotions</span>
+					</strong>
+				</span>
+			</span>
+		</div>
+
+		<div style="text-align: center;">
+			<span style="font-size:20px">
+				<span style="font-family:times new roman,times,serif">
+					<strong>
+						<span style="color:rgb(255, 140, 0)">Activity: Expressing emotion activity</span>
+					</strong>
+				</span>
+			</span>
+		</div>
+
+		<div style="text-align: center;">
+			<strong>There are both healthy and unhealthy ways of </strong>
+		</div>
+
+		<div style="text-align: center;">
+			<strong>expressing all feelings. Write down healthy and</strong>
+		</div>
+
+		<div style="text-align: center;">
+			<strong>unhealthy ways to express each of the following feelings.
+            </strong>
+		</div>
+
+		<div style="text-align: center;">
+			<strong>&nbsp;</strong></div>
+
+		<div style="text-align: center; margin-left:30%">
+			<table align="left" border="1" cellpadding="1" cellspacing="1" style="border-collapse:collapse; height:133px; width:454px">
+				<thead>
+					<tr>
+						<th scope="col" style="background-color:#FF8C00">
+							<div>
+								<span style="color:black">Emotion</span>
+							</div>
+						</th>
+						<th scope="col" style="background-color:#FF8C00">
+							<div>
+								<span style="color:black">Healthy ways</span>
+							</div>
+						</th>
+						<th scope="col" style="background-color:#FF8C00">
+							<div>
+								<span style="color:black">Unhealthy ways</span>
+							</div>
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<div style="text-align: left;">
+								<strong>Happy</strong>
+							</div>
+						</td>
+						<td>
+							<textarea id="happy-healthy" onkeypress="shiftFocus(event, 'happy-unhealth')" style="border:none" type="text"></textarea>
+						</td>
+						<td>
+							<textarea id="happy-unhealth" onkeypress="shiftFocus(event, 'sad-health')" style="border:none" type="text"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td style="text-align:left">
+							<strong>Sad</strong>
+						</td>
+						<td>
+							<textarea id="sad-health" onkeypress="shiftFocus(event, 'sad-unhealth')" style="border:none" type="text"></textarea>
+						</td>
+						<td>
+							<textarea id="sad-unhealth" onkeypress="shiftFocus(event, 'mad-healthy')" style="border:none" type="text"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td style="text-align:left">
+							<strong>Mad</strong>
+						</td>
+						<td>
+							<textarea id="mad-healthy" onkeypress="shiftFocus(event, 'mad-unhealthy')" style="border:none" type="text"></textarea>
+						</td>
+						<td>
+							<textarea id="mad-unhealthy" onkeypress="shiftFocus(event, 'scare-health')" style="border:none" type="text"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td style="text-align:left">
+							<strong>Scares</strong>
+						</td>
+						<td>
+							<textarea id="scare-health" onkeypress="shiftFocus(event, 'scares-unhealthy')" style="border:none" type="text"></textarea>
+						</td>
+						<td>
+							<textarea id="scares-unhealthy" onkeypress="shiftFocus(event, 'embarrased-health')" style="border:none" type="text"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td style="text-align:left">
+							<strong>Embarrassed</strong>
+						</td>
+						<td>
+							<textarea id="embarrased-health" onkeypress="shiftFocus(event, 'embarrased-unhealthy')" style="border:none" type="text"></textarea>
+						</td>
+						<td>
+							<textarea id="embarrased-unhealthy" onkeypress="shiftFocus(event, 'anxious-health')" style="border:none" type="text"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td style="text-align:left">
+							<strong>Anxious</strong>
+						</td>
+						<td>
+							<textarea id="anxious-health" onkeypress="shiftFocus(event, 'anxious-unhealthy')" style="border:none" type="text"></textarea>
+						</td>
+						<td>
+							<textarea id="anxious-unhealthy" onkeypress="shiftFocus(event, 'excited-health')" style="border:none" type="text"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td style="text-align:left">
+							<strong>Excited</strong>
+						</td>
+						<td>
+							<textarea id="excited-health" onkeypress="shiftFocus(event, 'excited-unhealthy')" style="border:none" type="text"></textarea>
+						</td>
+						<td>
+							<textarea id="excited-unhealthy" onkeypress="shiftFocus(event, 'worried-health')" style="border:none" type="text"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td style="text-align:left">
+							<strong>Worried</strong>
+						</td>
+						<td>
+							<textarea id="worried-health" onkeypress="shiftFocus(event, 'worried-unhealthy')" style="border:none" type="text"></textarea>
+						</td>
+						<td>
+							<textarea id="worried-unhealthy" onkeypress="shiftFocus(event, 'shy-health')" style="border:none" type="text"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td style="text-align:left">
+							<strong>Shy</strong>
+						</td>
+						<td>
+							<textarea id="shy-health" onkeypress="shiftFocus(event, 'shy-unhealthy')" style="border:none" type="text"></textarea>
+						</td>
+						<td>
+							<textarea id="shy-unhealthy" onkeypress="shiftFocus(event, 'disappointed-health')" style="border:none" type="text"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td style="text-align:left">
+							<strong>Disappointed</strong>
+						</td>
+						<td>
+							<textarea id="disappointed-health" onkeypress="shiftFocus(event, 'disappointed-unhealthy')" style="border:none" type="text"></textarea>
+						</td>
+						<td>
+							<textarea id="disappointed-unhealthy" onkeypress="shiftFocus(event, 'lonely-health')" style="border:none" type="text"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td style="text-align:left">
+							<strong>Lonely</strong>
+						</td>
+						<td>
+							<textarea id="lonely-health" onkeypress="shiftFocus(event, 'lonely-unhealthy')" style="border:none" type="text"></textarea>
+						</td>
+						<td>
+							<textarea id="lonely-unhealthy" onkeypress="shiftFocus(event, 'hurt-health')" style="border:none" type="text"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td style="text-align:left">
+							<strong>Hurt</strong>
+						</td>
+						<td>
+							<textarea id="hurt-health" onkeypress="shiftFocus(event, 'hurt-unhealthy')" style="border:none" type="text"></textarea>
+						</td>
+						<td>
+							<textarea id="hurt-unhealthy" style="border:none" type="text"></textarea>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div>&nbsp;</div>
+		</div>
+
+		<div style="text-align: center;">&nbsp;</div>
+
+		<div style="text-align: right;">
+			<a href="page-3.html" style="cursor:pointer;">
+				<img alt="" src="images/previous page.png" style="height:50px; width:120px; cursor: pointer" />
+			</a>
+			&nbsp;
+		</div>
+
+		<div style="text-align: right;">
+			<a href="page-5.html" style="cursor:pointer;">
+				<img alt="" src="images/next page.png" style="height:50px; width:120px; cursor: pointer" />
+			</a>
+			&nbsp;
+		</div>
+		
+	</body>
+</html>
